@@ -6,5 +6,9 @@ this.tasks = [
   {taskName: 'Wash Dishes' todo: true}
 ];
 
-
+addTask(newTaskName) {
+  this.task.push({
+    name: newTaskName;
+  })
+}
 }};
