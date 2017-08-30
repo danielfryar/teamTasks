@@ -3,14 +3,14 @@ class taskController {
 this.tasks = [
   {taskName:'Get Milk', todo: true},
   {taskName:'Walk Dog', todo: true},
-  {taskName: 'Wash Dishes' todo: true}
-];
+  {taskName: 'Wash Dishes', todo: true}
+]}};
 
-addTask(newTaskName) {
-  this.task.push({
-    name: newTaskName;
-  })
-}
-}};
+// addTask(newTaskName) {
+//   this.task.push({
+//     name: newTaskName;
+//   })
+// }
+// }};
 
-angular.module('teamTasksApp').controller('taskController' taskController);
+angular.module('teamTasksApp').controller('taskController', taskController);

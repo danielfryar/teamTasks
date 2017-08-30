@@ -6,7 +6,7 @@ app.config(function ($routeProvider) {
     .when('/taskList',
             {
                 controller: 'taskController',
-                templateUrl: '/ngApp/partials/taskList.html'
+                templateUrl: '/partials/taskList.html'
             })
         .otherwise({ redirectTo: '/taskList' });
 });
