@@ -8,11 +8,5 @@ app.config(function ($routeProvider) {
                 controller: 'taskController',
                 templateUrl: '/ngApp/partials/taskList.html'
             })
-        //Define a route that has a route parameter in it (:customerID)
-        .when('/newTask',
-            {
-                controller: 'newTaskController',
-                templateUrl: '/ngApp/partials/newTask.html'
-            })
         .otherwise({ redirectTo: '/taskList' });
 });
