@@ -12,3 +12,5 @@ addTask(newTaskName) {
   })
 }
 }};
+
+angular.module('teamTasksApp').controller('taskController' taskController);
