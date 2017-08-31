@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>taskList</title>
-  </head>
-    <body data-ng-controller="taskController">
-      <h1>To Do List<h2>
+
+      <h1>To Do List</h1>
         <ul>
-          <li ng-repeat="task in controller.task.taskName">{{task.taskName}}</li>
+          <li ng-repeat="task in controller.tasks">{{task.taskName}}</li>
         </ul><br>
           <div class="taskInput">Add New Task<br>
             <input data-ng-model="newTask.toDoTask" type="text" placeholder="New Task">
             <button id="submitTask" type="button" data-ng-click="insertTask()">Add</button>
           </div>
-    </body>
-</html>

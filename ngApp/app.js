@@ -7,6 +7,7 @@ app.config(function ($routeProvider) {
             {
                 url: '/',
                 controller: 'taskController',
+                controllerAs: 'controller',
                 templateUrl: '/partials/taskList.html'
             })
         .otherwise({ redirectTo: '/taskList' });

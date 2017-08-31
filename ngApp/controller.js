@@ -1,6 +1,6 @@
 class taskController {
   contructor() {
-this.tasks = [
+  this.tasks = [
   {taskName:'Get Milk', todo: true},
   {taskName:'Walk Dog', todo: true},
   {taskName: 'Wash Dishes', todo: true}
@@ -8,9 +8,16 @@ this.tasks = [
 
 // addTask(newTaskName) {
 //   this.task.push({
-//     name: newTaskName;
+//     name: newTaskName
 //   })
-// }
 // }};
 
 angular.module('teamTasksApp').controller('taskController', taskController);
+
+// var app = angular.module('teamTaskApp', [])
+// .controller('taskController', function($scope){
+//   $scope.tasks = [
+//     {taskName: 'get milk', todo: true},
+//     {taskName: 'walk dog', todo: true}
+//   ]
+// });
