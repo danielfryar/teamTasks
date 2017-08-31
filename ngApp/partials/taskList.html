@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <title>taskList</title>
   </head>
-  <body data-ng-controller="taskController">
-    <h1>To Do List<h2>
-      <ul>
-        <li ng-repeat="tasks in controller.tasks">{{task.taskName}}</li>
-      </ul>
-      <div class="taskInput">
-        <input data-ng-model="newTask.toDoTask" type="text" placeholder="newTask">
-        <button id="submitTask" type="button" data-ng-click="insertTask()">addTask</button>
-      </div>
-
-  </body>
+    <body data-ng-controller="taskController">
+      <h1>To Do List<h2>
+        <ul>
+          <li ng-repeat="task in controller.task.taskName">{{task.taskName}}</li>
+        </ul><br>
+          <div class="taskInput">Add New Task<br>
+            <input data-ng-model="newTask.toDoTask" type="text" placeholder="New Task">
+            <button id="submitTask" type="button" data-ng-click="insertTask()">Add</button>
+          </div>
+    </body>
 </html>

@@ -5,6 +5,7 @@ app.config(function ($routeProvider) {
     $routeProvider
     .when('/taskList',
             {
+                url: '/',
                 controller: 'taskController',
                 templateUrl: '/partials/taskList.html'
             })
